@@ -78,7 +78,9 @@ function genMarkdown(data) {
 * [Testing](#test)\n
   `;
   if (licenseSect !== '') {
-    toc = toc.concat(`* [Licenses](#licenses)`)
+    toc = toc.concat(`
+* [Licenses](#licenses)
+`)
   };
 
   return `
@@ -86,38 +88,38 @@ function genMarkdown(data) {
 
   ${licenseBadge}
 
-  ## Description
+## Description
 
   ${description}
 
-  ## Table of Contents
+## Table of Contents
 
   ${toc}
 
-  ## Installation
+## Installation
 
   ${installation}
 
-  ## Usage
+## Usage
 
   ${usage}
 
-  ## Contributing
+## Contributing
   
   ${contribution}
 
-  ## Testing
+## Testing
 
   ${test}
 
   ${licenseSect}
 
-  ## Questions
+## Questions
 
   Find me on GitHub: [${gituser}](https://github.com/${gituser}) ←_←
 
-  📤 Or send me an email: [${email}](mailto:${email}) 📥
-  `
+  Or send me an email: 📤 [${email}](mailto:${email}) 📥
+`
 }
 
 module.exports = genMarkdown;

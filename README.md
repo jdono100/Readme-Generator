@@ -31,11 +31,17 @@
 
   ## Usage
 
-  1. Navigate to the downloaded repo in bash & run node on the index file 
+  1. Navigate to the downloaded repo in bash & run `node` on the `index.js` file 
 
   2. Answer the questions and a readme will be generated with the information provided.
   
   The usefulness of this app applies only to developers, really, but it is quite useful to have a stylized readme that can be generated quickly and with little effort.
+
+  ## Demo 
+
+  Here's a gif demonstrating the functionality of my app:
+
+  ![Demo gif](./assets/demo-files/readmegen-demogif.gif)
 
   ## Contributing
   
@@ -43,7 +49,7 @@
 
   ## Questions
 
-   Find me on GitHub: [jdono100](https://github.com/jdono100)
+   Find me on GitHub: [jdono100](https://github.com/jdono100) ←_←
 
-  Or send me an email: [jdono100gmail.com](mailto:jdono100@gmail.com)
+  Or send me an email: 📤 [jdono100gmail.com](mailto:jdono100@gmail.com) 📥
   
