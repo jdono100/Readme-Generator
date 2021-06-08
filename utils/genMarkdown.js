@@ -72,10 +72,10 @@ function genMarkdown(data) {
   const licenseLink = renderLicenseLink(licenses);
   const licenseSect = renderLicenseSection(licenseLink);
   let toc = `
-    * [Installation](#installation)\n
-    * [Usage](#usage)\n
-    * [Contributing](#contribution)\n
-    * [Testing](#test)\n
+* [Installation](#installation)\n
+* [Usage](#usage)\n
+* [Contributing](#contribution)\n
+* [Testing](#test)\n
   `;
   if (licenseSect !== '') {
     toc = toc.concat(`* [Licenses](#licenses)`)
@@ -114,9 +114,9 @@ function genMarkdown(data) {
 
   ## Questions
 
-  :octocat: Find me on GitHub: [${gituser}](https://github.com/${gituser}) :octocat:
+  Find me on GitHub: [${gituser}](https://github.com/${gituser}) ←_←
 
-  :inbox_tray: Or send me an email: ${email} :outbox_tray:
+  📤 Or send me an email: [${email}](mailto:${email}) 📥
   `
 }
 
