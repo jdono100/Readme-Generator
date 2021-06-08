@@ -58,15 +58,24 @@ const questions = [
         message: chalk.blue('Choose license(s) to protect the project.'),
         choices: ['MIT', 'Apache 2.0', 'AGPLv3', 'GPLv3', 'LGPLv3', 'Mozilla 2.0'],
         name: 'licenses',
-        default: 'MIT'
+        default: ''
     }
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log(chalk.greenBright('Generating your README...⌚')))
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+// Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+        .then((response) => {
+            let projTitle = `${response.title}_README.md`
+            let markdown = generate.genRdmeMrkdwn(response)
+            writeToFile(projTitle, markdown);
+        })
+}
 
 // Function call to initialize app
 init();
